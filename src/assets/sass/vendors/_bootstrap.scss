@@ -1,0 +1,36 @@
+/* stylelint-disable */
+
+// Bootstrap-colors
+$primary: #fff;
+$body-bg: #1f1e1e;
+$body-color: #fff;
+$dark: $body-bg;
+// $secondary: #015051;
+$secondary: #222323;
+$success: $secondary;
+
+// Bootstrap-fonts
+$font-family-base: 'Significa Sans', sans-serif;
+$font-size-base: 1.6rem;
+$line-height-base: 1.5;
+
+// Boostrap-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+// Boostrap-container widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1380px,
+);
+
+@import 'bootstrap/scss/bootstrap';

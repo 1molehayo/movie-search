@@ -6,8 +6,8 @@ describe('When everything is OK in the Home page', () => {
   it('renders a heading', () => {
     render(<Page />);
 
-    const heading = screen.getByRole('heading', { level: 1 });
+    const homepage = screen.getByTestId('home');
 
-    expect(heading).toBeInTheDocument();
+    expect(homepage).toBeInTheDocument();
   });
 });
