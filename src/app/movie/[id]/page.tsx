@@ -4,7 +4,7 @@ import imdb from '@/assets/images/imdb.svg';
 import Logo from '@/components/logo';
 import Link from 'next/link';
 
-export async function getData(movieId: string) {
+async function getData(movieId: string) {
   console.log('movieId: ', movieId);
 
   const res = await fetch(
