@@ -3,7 +3,7 @@ import MovieCard from './movie-card';
 import EmptyState from './empty-state';
 import Pagination from './pagination';
 
-export async function getData(query: { search: string; page?: number }) {
+async function getData(query: { search: string; page?: number }) {
   const { search, page } = query;
   console.log('search: ', search);
   console.log('page: ', page);
