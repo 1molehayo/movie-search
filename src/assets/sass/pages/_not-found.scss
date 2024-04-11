@@ -1,0 +1,20 @@
+#not-found {
+  padding-top: 4rem;
+
+  .not-found {
+    text-align: center;
+
+    h1 {
+      @include font-size(x-large);
+      margin-bottom: 3rem;
+    }
+
+    p {
+      @include font-size(regular);
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

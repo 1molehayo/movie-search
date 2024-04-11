@@ -1,0 +1,28 @@
+.search-results {
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  min-height: 60vh;
+
+  &--empty {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 65%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  @include respond(md) {
+    min-height: 50vh;
+  }
+
+  h4 {
+    margin-bottom: 3rem;
+  }
+}

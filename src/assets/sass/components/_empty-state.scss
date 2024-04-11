@@ -1,0 +1,18 @@
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+  color: color;
+
+  svg {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 0.3rem;
+    span {
+      text-decoration: underline;
+    }
+  }
+}

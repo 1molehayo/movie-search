@@ -1,0 +1,41 @@
+$border-radius: 5px;
+$border-radius-lg: 10px;
+
+$colors: (
+  black: #000,
+  blue: #1746eb,
+  dark: #222323,
+  grey: #a0a0a2,
+  primary: #ffffff,
+  red: #eb172f,
+);
+
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+$font-sizes: (
+  x-small: 1.2rem,
+  small: 1.4rem,
+  regular: 1.6rem,
+  medium: 1.8rem,
+  large: 2.4rem,
+  m-large: 3rem,
+  x-large: 3.5rem,
+);
+
+// mobile first
+$break-points: (
+  // large mobile phones
+  xs: 0,
+  // small tabs or phablets
+  sm: 600px,
+  // tabs and ipads
+  md: 900px,
+  // large tabs / large ipads / small laptops
+  lg: 1200px,
+  // laptops / desktops
+  xl: 1536px
+);
