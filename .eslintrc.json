@@ -38,13 +38,6 @@
         "default": "array"
       }
     ],
-    "@typescript-eslint/consistent-type-assertions": [
-      "warn",
-      {
-        "assertionStyle": "as",
-        "objectLiteralTypeAssertions": "never"
-      }
-    ],
     // React rules
     "react/jsx-fragments": ["warn", "syntax"], // Shorthand syntax for React fragments
     "react/jsx-filename-extension": [
