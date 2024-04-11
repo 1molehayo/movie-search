@@ -1,2 +1,67 @@
 #movie {
+  position: relative;
+
+  .movie {
+    &__header {
+      margin-bottom: 5rem;
+      padding: 1.5rem;
+
+      .container {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__image {
+      background-color: rgba($color: color(primary), $alpha: 0.1);
+    }
+
+    &__hero {
+      .container {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
+      }
+    }
+
+    &__info {
+      h1 {
+        margin-bottom: 2.4rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .movie__rating {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+    }
+
+    &__type {
+      @include font-size(small);
+      @include font-weight(bold);
+      display: inline-flex;
+      border-radius: $border-radius;
+      padding: 5px 8px;
+      border-radius: $border-radius;
+
+      &--red {
+        background-color: color(red);
+      }
+
+      &--blue {
+        background-color: color(blue);
+      }
+    }
+  }
 }

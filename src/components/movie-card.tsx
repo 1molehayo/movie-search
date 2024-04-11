@@ -1,6 +1,7 @@
 'use client';
 import { type IMovie } from '@/models/movie';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function MovieCard({ movie }: { movie: IMovie }) {
   const isMovie = movie?.Type && movie.Type.toLowerCase() === 'movie';
@@ -8,7 +9,7 @@ export default function MovieCard({ movie }: { movie: IMovie }) {
   const isInvalidImage = !movie.Poster || movie?.Poster === 'N/A';
 
   return (
-    <div className="card movie-card">
+    <Link href={`/movie/${movie.imdbID}`} className="card movie-card">
       <div className="movie-card__image">
         {isInvalidImage ? (
           <div className="movie-card__image--invalid">
@@ -42,6 +43,6 @@ export default function MovieCard({ movie }: { movie: IMovie }) {
       <span className="movie-card__year">{movie.Year}</span>
 
       <p className="movie-card__title">{movie.Title}</p>
-    </div>
+    </Link>
   );
 }
