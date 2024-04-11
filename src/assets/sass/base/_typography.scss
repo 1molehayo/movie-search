@@ -15,7 +15,7 @@ p,
 li,
 a {
   @include font-weight(regular);
-  @include font-size(medium);
+  @include font-size(regular);
 
   letter-spacing: 0.2px;
   line-height: 1.6;

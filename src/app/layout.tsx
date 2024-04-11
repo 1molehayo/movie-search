@@ -14,7 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <footer>
+          <p className="container text-center">
+            copyright &copy; {new Date().getFullYear()}{' '}
+            <strong>Significa</strong>
+          </p>
+        </footer>
+      </body>
     </html>
   );
 }

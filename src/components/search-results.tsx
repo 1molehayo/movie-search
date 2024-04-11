@@ -31,7 +31,7 @@ export default async function SearchResults({
     ? await getData({ search: query, page: currentPage })
     : { Search: [], totalResults: 0 };
 
-  console.log('response: ', Object.keys(data));
+  console.log('response: ', data);
 
   const { Search, totalResults } = data;
 
